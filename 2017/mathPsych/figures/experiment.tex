@@ -1,0 +1,27 @@
+
+\documentclass[border=10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\definecolor{myGray}{rgb}{0.7,0.7,0.7}
+\begin{document}
+
+% Define block styles
+\tikzstyle{block} = [rectangle, draw, fill=myGray, 
+    text width=10em, text centered, rounded corners, minimum height=8em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+    
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+    \node [block, xshift=-2.5cm] () {$2+3=7$};
+    \node [block, xshift=2.5cm] () {\small
+      $\text{two}+\text{three}=\text{seven}$};
+
+    % Draw edges
+   
+\end{tikzpicture}
+
+\end{document}
